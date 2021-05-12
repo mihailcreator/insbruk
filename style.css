@@ -1,0 +1,281 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: 'Noto Sans', sans-serif;
+}
+a{
+	text-decoration: none;
+}
+img{
+	max-width: 100%;
+	height: auto;
+}
+
+header{
+	display: flex;
+	margin-top:10px;
+}
+.container{
+	width: 1200px;
+	margin:0 auto;
+}
+nav{
+	flex-grow: 1;
+}
+.main_menu{
+	list-style-type: none;
+	padding:0px;
+	display:flex;
+	justify-content: space-around;
+
+}
+header img{
+	width: 75px;
+	height: 70px;
+}
+.main_menu a{
+	color:#2A3D8F;
+	line-height: 41px;
+	font-size: 30px;
+}
+.main_menu a:hover{
+	color:#3893cc;
+}
+footer{
+	display: flex;
+	justify-content:space-evenly;
+	padding:35px 0;
+
+}
+footer p,footer ul{
+	margin:0;
+	padding:0;
+	list-style-type: none;
+
+
+}
+.visitin{
+	font-weight: bold;
+	padding:0;
+	font-size:21px;
+	line-height: 26px;
+}
+.footer_list{
+	display: flex;
+	justify-content: center;
+}
+.footer_list img{
+	margin:0 10px;
+}
+.copyright{
+	font-size:14px;
+	line-height: 26px;
+}
+.footer_wrapper{
+	background-color:#B5D4C5; 
+}
+h2{
+	color:#2A3D8F;
+	font-size: 36px;
+	line-height: 49px;
+}
+h3{
+	font-size: 30px;
+	line-height: 41px;
+}
+.slogan{
+	height: 558px;
+	background-image: url(img/innsbruck1.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	
+}
+.slogan h1{
+	color:white;
+	line-height: 82px;
+	font-size: 61px;
+	margin:0;
+	padding-top:240px;
+}
+.about-wrapper{
+	display: flex;
+	justify-content: space-between;
+}
+.about-numbers-list{
+	list-style-type: none;
+	margin:0;
+	padding:0;
+	padding-left:20px;
+}
+.about-numbers-list li::before{
+	content:"✓";
+	padding-right: 3px;
+}
+
+.about-info{
+
+}
+.about-numbers{
+	
+
+}
+.about-add{
+	display: flex;
+	flex-direction:column;
+	width: 30%;
+	background-image: url(img/skier.png);
+	background-repeat: no-repeat;
+	background-size: cover ;
+	background-position: center right;
+
+
+}
+.about-add p{
+	margin:0;
+	padding:5px;
+	line-height: 33px;
+	font-size:2vw;
+}
+.about-add a{
+	display: inline-block;
+	padding:5px 10px;
+	color:black;
+	margin-top:60px;
+	background-color: white;
+	opacity:70%;
+	align-self: flex-end;
+}
+.about-weather-graph{
+	border:thin #c0c0c0 solid;
+	display: flex;
+	flex-direction: column;
+	margin:0;
+}
+.about-weather-graph figcaption{
+	font-size:22px;
+	line-height:33px;
+	padding:5px;
+	text-align:center;
+	color:white;
+	background-color: rgb(124,124,124);
+}
+.gallery-list{
+	list-style-type: none;
+	display: flex;
+	flex-direction: column;
+	padding:0;
+	margin:0;
+}
+.gallery-list-item{
+	display: flex;
+	flex-direction: row;
+	padding:0;
+	margin:0;
+	margin-bottom: 10px;
+	min-width: 256px;
+	align-items: center;
+	text-align: center;
+	background-color: #B5D4C5;
+	color:white;
+
+}
+.gallery-list-item h3{
+	flex-grow: 1;
+	text-transform: uppercase;
+}
+.table-transfer{
+	border-collapse: collapse;
+	margin:0 auto;
+	margin-bottom:20px;
+}
+.table-transfer thead{
+	background-color: rgb(32,46,92);
+	color:white;
+}
+.table-transfer td,th{
+	border:1px solid #333;
+	padding:5px;
+	text-align: center;
+	width: 25%;
+}
+.table-transer td:first-child{
+	text-align:left;
+}
+.table-transfer tr:nth-child(odd){
+	background-color: rgba(62, 64, 71, 0.322);
+}
+.table-transfer tr:nth-child(even){
+	background-color: rgba(2, 139, 252, 0.322);
+
+}
+@media(max-width: 1200px){
+	.container{
+		width: 90%;
+	}
+	iframe{
+		width: 90%;
+
+	}
+	.gallery-list-item{
+		flex-direction: column;
+	}
+	.gallery-list-item:nth-child(2){
+		flex-direction: column-reverse;
+	}
+	.gallery-list-item img{
+		width: 100%;
+	}
+}
+@media(max-width: 468px){
+	header{
+		display: flex;
+		flex-direction: column;
+		align-items:center;
+	}
+	nav{
+	width: 100%;
+}
+.main_menu{
+	margin: 0;
+	flex-direction: column;
+	align-items: center;
+	
+}
+.main_menu li{
+	width: 100%;
+	border-bottom:solid 1px black;
+}
+header img{
+	width: 75px;
+	height: 70px;
+}
+.main_menu a{
+	color:#2A3D8F;
+	line-height: 41px;
+	font-size: 30px;
+	text-align: center;
+	padding:10px 10px;
+	display: block;
+}
+.main_menu a:hover{
+	color:#3893cc;
+	}
+.gallery-list-item{
+	flex-direction: column;
+}
+.about-wrapper{
+	display: flex;
+	flex-wrap:wrap;
+}
+.about-add{
+	width: 100%;
+}
+iframe{
+	width: 420px;
+}
+footer{
+	display: flex;
+	flex-wrap: wrap;
+	align-content: center;
+}
+}
